@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../images/Espacio.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: yellow;
+    text-align: center;
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: yellow;
+    /* Añade esta línea para cambiar el color de los enlaces */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #FFD700;
+    /* Color amarillo para los nombres de los médicos */
+}
+
+.back-button {
+    color: #fff;
+    /* Color del texto */
+    background-color: #007BFF;
+    /* Color de fondo */
+    padding: 8px 12px;
+    /* Espaciado interno */
+    display: inline-block;
+    /* Mostrar como un bloque en línea */
+    margin-top: 10px;
+    /* Espaciado superior */
+    text-decoration: none;
+    /* Sin subrayado */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 14px;
+    /* Tamaño de la fuente */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    /* Color de fondo al pasar el ratón */
+}

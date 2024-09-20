@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Color de fondo */
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: 2em 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav a:focus {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(24, 29, 29);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    display: flex;
+    /* Flexbox */
+    justify-content: center;
+    /* Centrar contenido */
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan */
+    background-color: rgb(94, 188, 192);
+    /* Color de fondo */
+    width: 92%;
+    /* Ancho igual al de la barra de navegación */
+    margin: 2em 0;
+    /* Margen superior e inferior */
+    text-align: center;
+    /* Alineación centrada */
+    margin-left: auto;
+    /* Centrar el contenedor horizontalmente */
+    margin-right: auto;
+    /* Centrar el contenedor horizontalmente */
+}
+
+footer h3 {
+    margin: 0.5em;
+    /* Margen */
+    padding: 0.5em;
+    /* Relleno */
+    background-color: black;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    flex: 1 1 auto;
+    /* Flexibilidad */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        /* Dirección de la columna */
+    }
+}
+
+/* Estilos para los enlaces en .final */
+.final a {
+    color: #007BFF;
+    /* Cambia este valor al color que prefieras */
+    font-style: italic;
+}

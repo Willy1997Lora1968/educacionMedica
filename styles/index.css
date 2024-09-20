@@ -1,0 +1,214 @@
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Color de fondo */
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 92%;
+    margin: 2em 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav a:focus {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+
+/* Estilos para el reloj digital */
+.digitalClock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.time,
+.date,
+.dayOfYear {
+    background-color: rgb(94, 188, 192);
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.time {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+}
+
+.date,
+.dayOfYear {
+    width: 20%;
+    border-radius: 15px;
+}
+
+img {
+    display: block;
+    width: 270px;
+    height: 270px;
+}
+
+/* Estilos para el contenido principal */
+.content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+h3 a {
+    text-decoration: none;
+}
+
+/* Estilos para el formulario */
+.form-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgb(94, 188, 192);
+    text-align: center;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #e0f7fa;
+    /* Color más suave */
+    border: 1px solid #ccc;
+    /* Añadir borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    outline: 2px solid #00796b;
+    /* Añadir estado de enfoque */
+    outline-offset: 2px;
+}
+
+.form-container input[type="submit"] {
+    width: 40%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+    color: blueviolet;
+}
+
+a {
+    text-decoration: none;
+    /* Sin subrayado */
+    font-style: italic;
+    /* Texto en cursiva */
+    display: inline-block;
+    /* Permitir que el enlace se comporte como un bloque en línea */
+}
+
+/* Estilos para el pie de página */
+footer {
+    display: flex;
+    /* Flexbox */
+    justify-content: center;
+    /* Centrar contenido */
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan */
+    background-color: rgb(94, 188, 192);
+    /* Color de fondo */
+    width: 92%;
+    /* Ancho igual al de la barra de navegación */
+    margin: 2em 0;
+    /* Margen superior e inferior */
+    text-align: center;
+    /* Alineación centrada */
+    margin-left: auto;
+    /* Centrar el contenedor horizontalmente */
+    margin-right: auto;
+    /* Centrar el contenedor horizontalmente */
+}
+
+footer h3 {
+    margin: 0.5em;
+    /* Margen */
+    padding: 0.5em;
+    /* Relleno */
+    background-color: black;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    flex: 1 1 auto;
+    /* Flexibilidad */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 0.8em;
+        /* Tamaño de la fuente reducido */
+    }
+
+    nav {
+        flex-direction: column;
+        /* Dirección de la columna */
+    }
+}
